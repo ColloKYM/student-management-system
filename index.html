@@ -5,39 +5,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Management system</title>
-    <link rel="stylesheet" href="style.css">
+    <title> Skill Bridge Institute - Student Management system</title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="script.js" defer></script>
 </head>
 
-<!-- Shared navigation -->
-<header>
-    <a href="index.html">Student Management System</a>
-    <h1> Student Management System</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home / Dashboard</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="courses.html">Courses offered</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-</header>
-
-<!-- Main section -->
-
 <body>
-    <section class="hero">
-        <div class="hero-content">
-            
+    <!-- Shared navigation -->
+    <header>
+        <a href="index.html" class="logo">Skill Bridge <span>Institute</span></a>
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home / Dashboard</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="courses.html">Courses offered</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Main section -->
+    <main>
+        <section class="hero">
+            <h1>Student Management System</h1>
+            <p>Welcome to the institution dashboard. Registere Students, monitor academic performance,
+                and manage academic records seamlessly.
+            </p>
+        </section>
+
+        <!-- Task 5: Dashboard statistics-->
+        <div class="stat-grid">
+            <div class="stat-card">
+                <h3>Total Students</h3>
+                <p id="stat-total">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Passed Students</h3>
+                <p id="stat-passed">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Failed Students</h3>
+                <p id="stat-failed">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Average Marks</h3>
+                <p id="stat-avg">0</p>
+            </div>
         </div>
 
-    </section>
+        <!-- Task 1: Student Registration form -->
+        <section class="form-container">
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter student's full name">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" placeholder="Enter student's age">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Full Name</label>
+                    <input type="text" id="student-Name" placeholder="Enter student's full name">
+                    <select id="gender">
+                        <option value="">Select gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="course">Course</label>
+                    <select id="course">
+                        <option value="">Select Course</option>
+                        <option value="Software Development">Software Development</option>
+                        <option value="Web Design">Web Design</option>
+                        <option value="Data Analysis">Data Analysis</option>
+                        <option value="Cyber Security">Cyber Security</option>
+                        <option value="Networking">Networking</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Computer Packages">Computer Packages</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="marks">Marks (0-100)</label>
+                    <input type="number" id="marks" placeholder="Enter exam marks">
+                </div>
+                <button type="submit" class="btn">Register Student</button>
+            </form>
+        </section>
 
+        <!--Task 3 and 4-->
+        <section class="table-container">
+            <h2>Student Records</h2>
+        </section>
+        <!--Task 3-->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search student by name">
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Course</th>
+                        <th>Marks</th>
+                        <th>Performance</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="student-table-body">
+                    <tr>
+                        <td colspan="7">No registered students yet</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+
+    <!-- Shared footer-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Skill Bridge Institute</h3>
+                <p>Equip talent, shape tomorrow through comprehensive technology training and practical skills.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses Offered</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Skill Bridge Institute. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
-<footer>
 
-</footer>
 </html>

@@ -1,48 +1,110 @@
 <!-- contact -->
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Skill Bridge Institute</title>
- </head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
 
- <header>
-    <nav>
-        <ul id="nav-links" >
-            <li><a href="index.html">Home / Dashboard</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="courses.html">Courses offered</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
- </header>
+<body>
+    <!-- Shared navigation -->
+    <header>
+        <a href="index.html">Student Management System</a>
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home / Dashboard</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="courses.html">Courses offered</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
- <body>
+    </header>
     <section class="hero">
         <h1>Get in touch</h1>
         <p>Have questions about our programs or admissions? Reach out to our team and we
             will be happy to assist you
         </p>
     </section>
+    <div>
+        <section class="form-container">
+            <h2>Send us a message</h2>
+            <div id="contact-alert" class="alert-box"></div>
 
-    <section>
-        <h2>Send us a message</h2>
-        <form>
-            <div class="form-group">
-                <label for="contactName">Full Name</label>
-                <input type="text" id="contactName" placeholder="Enter your full name">
-            </div>
-            <div class="form-group">
-                <label for="contatEmail">Email Address</label>
-                <input type="text" id="contatEmail" placeholder="example@gmail.com">
-            </div>
-            
-        </form>
-    </section>
-    
- </body>
- <footer>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="contactName">Full Name</label>
+                    <input type="text" id="contactName" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email Address</label>
+                    <input type="text" id="contactEmail" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="contactSubject">Subject</label>
+                    <input type="text" id="contactSubject" placeholder="Inquiry subject">
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage">Message (At least 10 characters)</label>
+                    <textarea id="contactMessage" placeholder="Type your message here..."></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+         <div>
+            <section class="form-container">
+                <h2>Institution Details</h2>
+                <ul>
+                    <li><strong>Physical Address:</strong>Tech Hub Towers, 4th Floor, Nyeri, Kenya</li>
+                    <li><strong>Phone number:</strong>+254 712 345 678</li>
+                    <li><strong>Email Address:</strong>admissions@skillbrideinstitute.org</li>
+                    <li><strong>Opening Hours:</strong>Monday - Friday: 8:00 AM - 5:00 PM</li>
+                </ul>
+                <div>
+                    <h3>Connect With Us</h3>
+                    <p>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter (X)</a>
+                        <a href="#">Facebook</a>
+                    </p>
+                </div>
+            </section>
+            <section class="form-container">
+                <h3>Campus Location Map</h3>
+                <p>[ Interactive Campus Map Placeholder ]</p>
+            </section>
+         </div>
+    </div>
 
- </footer>
- </html>
+
+    <!-- Shared footer-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Skill Bridge Institute</h3>
+                <p>Equip talent, shape tomorrow through comprehensive technology training and practical skills.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses Offered</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Skill Bridge Institute. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+
+
+</html>
