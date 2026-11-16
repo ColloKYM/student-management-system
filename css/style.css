@@ -113,6 +113,12 @@ main {
     margin: 0 auto 1.5rem auto;
 }
 
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
 .stat-card {
     background: var(--card-bg);
     padding: 1.5rem;
@@ -267,6 +273,36 @@ tbody > tr:hover {
     margin-top: 0.25rem;
     display: none;
 }
+.alert-box {
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    display: none;
+    font-weight: 500;
+}
+.alert-success {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #34d399;
+}
+.alert-error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #f87171;
+}
+
+.badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+}
+.badge-excellent { background-color: #d1fae5; color: #065f46; }
+.badge-very-good { background-color: #e0e7ff; color: #3730a3; }
+.badge-good { background-color: #fef3c7; color: #92400e; }
+.badge-average { background-color: #ffedd5; color: #9a3412; }
+.badge-failed { background-color: #fee2e2; color: #991b1b; }
 
 footer {
     background-color: var(--primary-color);
