@@ -164,9 +164,15 @@ function showAlert(element, message, type) {
     element.textContent = message;
     element.className = `alert-box alert-${type}`;
     element.style.display = "block";
+
+      element.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+
     setTimeout(() => {
         element.style.display = "none";
-    }, 4000);
+    }, 6000);
 }
 function initContactForm() {
     const contactForm = document.getElementById("contact-form");
