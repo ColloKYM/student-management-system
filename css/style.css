@@ -113,7 +113,7 @@ main {
     margin: 0 auto 1.5rem auto;
 }
 
-.stats-grid {
+.stat-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;

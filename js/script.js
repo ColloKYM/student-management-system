@@ -4,7 +4,7 @@ let students = [
         course: "Software Development", marks: 85
     },
     {
-        id: 1, name: "Caleb Chege", age: 23, gender: "Male",
+        id: 2, name: "Caleb Chege", age: 23, gender: "Male",
         course: "Software Development", marks: 65
     }
 ];
@@ -40,7 +40,7 @@ function initDashboard() {
     regForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        const name = document.getElementById("fullname").value.trim();
+        const name = document.getElementById("fullName").value.trim();
         const age = Number(document.getElementById("age").value);
         const gender = document.getElementById("gender").value;
         const course = document.getElementById("course").value;
@@ -55,7 +55,7 @@ function initDashboard() {
             showAlert(alertBox, "Error:Please enter a valid age.", "error");
             return;
         }
-        if (isNaN(marks) || age < 0 || age > 100) {
+        if (isNaN(marks) || marks < 0 || marks > 100) {
             showAlert(alertBox, "Error:Marks must be between 0 and 100.", "error");
             return;
         }
